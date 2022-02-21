@@ -1,0 +1,42 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+cmd+m",
+        "command": "cmstead.jsRefactor.extractMethod",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "shift+cmd+j m",
+        "command": "-cmstead.jsRefactor.extractMethod",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "alt+cmd+v",
+        "command": "cmstead.jsRefactor.extractVariable",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "shift+cmd+j v",
+        "command": "-cmstead.jsRefactor.extractVariable",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile"
+    },
+    // Terminal setup
+    {
+        "key": "ctrl+cmd+enter",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    }
+]
