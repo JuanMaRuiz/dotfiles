@@ -1,0 +1,41 @@
+[user]
+	name = JuanMa Ruiz
+	email = ruizjuanma@gmail.com
+[mergetool]
+	prompt = false
+[difftool]
+	prompt = false
+[difftool "meld"]
+  trustExitCode = true
+  cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesfile = /Users/juanmanuelruiz/.gitignore_global
+	autocrlf = input
+	editor = rnano
+	trustctime = false
+[merge]
+	tool = meld
+[mergetool]
+	keepBackup = false
+[mergetool "vscode-merge"]
+	cmd = code --wait $MERGED
+	trustExitCode = true
+[commit]
+	template = /Users/juanmanuelruiz/.stCommitMsg
+[alias]
+	st = status
+	co = checkout
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[filesystem "Oracle Corporation|10.0.2|/dev/disk1s5"]
+	timestampResolution = 11000 nanoseconds
+	minRacyThreshold = 0 nanoseconds
+[mergetool]
+  prompt = false
+[mergetool "meld"]
+  trustExitCode = true
+  cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
