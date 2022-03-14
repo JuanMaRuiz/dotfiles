@@ -1,0 +1,18 @@
+alias nano="/usr/local/bin/nano"
+
+###########
+# Folders #
+###########
+
+export WORKSPACE_FOLDER=$HOME/workspace
+alias github="cd $WORKSPACE_FOLDER/github"
+alias learning="cd $WORKSPACE_FOLDER/learning"
+alias learn="cd $WORKSPACE_FOLDER/learning"
+alias learnF="cd $WORKSPACE_FOLDER/learning/Frontend"
+alias demos="cd $WORKSPACE_FOLDER/demos"
+alias work="cd $WORKSPACE_FOLDER/work"
+
+############
+# Commnads #
+############
+alias ll="ls -lah"
