@@ -11,8 +11,8 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="agnoster"
-#ZSH_THEME="bira"
-ZSH_THEME="spaceship"
+ZSH_THEME="bira"
+#ZSH_THEME="spaceship"
 #ZSH_THEME="avit"
 
 # Set list of themes to load
@@ -104,7 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.bash_profile
-source ~/.bash_alias
+source ~/.zshrc_aliases
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="$HOME/.poetry/bin:$PATH"

@@ -38,7 +38,7 @@
   },
   "editor.renderWhitespace": "none",
   "explorer.confirmDelete": false,
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Default",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
